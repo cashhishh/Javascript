@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript 30 days Tasks</title>
-</head>
-<body>
-    <h1>Hey! Today I'm learning about Variables and Data types in javascript</h1>
-    
+  </head>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+    .highlight-border {
+      border: 2px solid red;
+    }
+  </style>
+  <body>
+    <h1>Hover to Change Border Color</h1>
+    <div
+      id="myElement"
+      style="width: 200px; height: 100px; border: 2px solid black"
+    >
+      Hover over me!
+    </div>
+    <h1 class="Heading">
+      Hey! Today I'm learning about Variables and Data types in javascript
+    </h1>
+    <p id="one">Document selector</p>
+    <h2 id="myheading">This is removable heading</h2>
+    <button onclick="addClass()">Add Highlight</button>
+    <button onclick="removeClass()">Remove Highlight</button>
 
-    <script src="Day5.js"></script>
-</body>
+    <ul id="shoppingList">
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Oranges</li>
+    </ul>
+    <button onclick="removeElement()">Remove Heading</button>
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <button onclick="removeLastItem()">Remove Last Item</button>
+    <h1>Click to Change Text</h1>
+    <p id="myParagraph">Original text. Click to change.</p>
+    <h1>Change Image Attribute</h1>
+    <img id="myImage" src="original.jpg" alt="Original Image" />
+    <br />
+    <button onclick="changeImage()">Change Image Source</button>
+
+    <script src="Day9.js"></script>
+  </body>
 </html>
