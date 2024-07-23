@@ -7,7 +7,10 @@ button.addEventListener("click", () => {
 });
 
 const image = document.getElementById("myImage");
-image.addEventListener("dblclick", function () {
+const toggleButton = document.getElementById("toggleButton");
+
+toggleButton.addEventListener("dblclick", function () {
+  // Toggle image visibility
   if (image.style.display === "none") {
     image.style.display = "block";
   } else {
